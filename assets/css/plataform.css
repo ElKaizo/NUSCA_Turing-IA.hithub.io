@@ -1,0 +1,145 @@
+/*variables*/
+:root {
+    --header-height: 3.5rem;
+    --white-color: #ececec;
+    --black-color: #0F2D3C;
+    --dark-green: #005546;
+    --green: #1EBE91;
+    --white-green:#1EBE91;
+    --normal-font-size: .938rem;
+    --font-medium: 500;
+  }
+
+.promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    z-index: 2;
+    background-color: var(--white-color);
+}
+
+.content {
+    margin-top: 8.5rem;
+    padding: 20px; /* Espaciado interno */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.349);
+}
+
+.table thead tr {
+    background-color: var(--green);
+    color: var(--white-color);
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #343a40;
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.btn {
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: var(--green);
+}
+
+.btn-warning:hover {
+    background-color: var(--dark-green);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-info {
+    background-color: var(--green);
+}
+
+.btn-info:hover {
+    background-color: var(--dark-green);
+}
+
+.red {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.green {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 1150px) {
+    .table thead {
+        display: none;
+    }
+    
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .table tr {
+        margin-bottom: 15px;
+    }
+    
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}

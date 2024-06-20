@@ -1,0 +1,109 @@
+/*materiales*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
+
+/*variables*/
+:root {
+  --header-height: 3.5rem;
+  --white-color: #ececec;
+  --black-color: #0F2D3C;
+  --dark-green: #005546;
+  --green: #1EBE91;
+  --white-green:#1EBE91;
+  --normal-font-size: .938rem;
+  --font-medium: 500;
+  --header-height: 3.5rem;
+  --body-font: "Montserrat Alternates", sans-serif;
+  --h1-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --font-regular: 400;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*CSS voltea img inicio*/
+@media screen and (min-width: 1150px) {
+  .contenedor.invert {
+    flex-direction: row-reverse;
+  }
+}
+
+
+/*Tipografia*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*Version movil*/
+@media screen and (max-width: 1150px) {
+
+  .footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer h1, .footer p{
+    padding-top: 5%;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    height: 100vh; 
+  }
+
+  .text, .img {
+    flex: none;              
+    width: 100%;            
+    height: auto;            
+  }
+
+  .img img {
+    height: auto;            
+    width: 100%;           
+  }
+
+  .text {
+    font-size: 18px;        
+  }
+
+  .text p {
+    padding: 5%;             
+  }
+}
+
+/*dispositivos largos*/
+@media screen and (min-width: 1150px) {
+  
+  .container {
+    margin-inline: auto;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+  }
+
+  .nav__toggle, 
+  .nav__close {
+    display: none;
+  }
+
+  .nav__link {
+    font-size: var(--normal-font-size);
+  }
+
+  .nav__link i {
+    font-size: 1.5rem;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+  }
+}

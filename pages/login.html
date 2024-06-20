@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="icon" href="../media/img/icon.jpg" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/barrasup.css">
+    <link rel="stylesheet" href="../assets/css/tamanos.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/barrainf.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!--Menu superior-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img class="logo" src="../media/img/logo.png" alt="">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="inicio.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Pagina principal</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="login.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Iniciar Sesión</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="registro.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Regístrate</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/turing.ia_/" target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.facebook.com/turing.mx?locale=es_LA" target="_blank" class="nav__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.turing-ia.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-dribbble-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/turing-inteligencia-artificial/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    <!--Script formulario ingreso-->
+    <div class="promo">
+        <div class="form">
+            <h1>Iniciar Sesión</h1>
+            <form action="../assets/php/login.php" method="post">
+                <p>Correo electrónico</p>
+                <input class="box" type="email" name="email" placeholder="Correo Electronico" required>
+                <p>Contraseña</p>
+                <input class="box" type="password" name="password" placeholder="Contraseña" required>
+                <p></p>
+                <input class="boton" type="submit" value="Iniciar sesión">
+            </form>
+            <p>¿Aún no estás registrado? <a href="registro.html">¡Regístrate!</a></p>
+        </div>
+        <div class="error">
+            <p>No se encontró el usuario o la contraseña es incorrecta</p>
+        </div>
+    </div>
+    <!--Menu inferior-->
+    <div class="footer">
+        <div class="contacto">
+            <h1>Turing Inteligencia Artificial</h1>
+            <p>Av. Insurgentes Sur 674 Del Valle Norte, Benito Juárez C.P 03103, Ciudad de México Oficina 12, 4° Piso.</p>
+            <h2>Teléfono de contacto:</h2>
+            <p>+52 (722) 936-96-65</p>
+            <h2>Correo electrónico:</h2>
+            <p>contacto@turing-ia.com</p>
+        </div>
+        <div class="ubicacion">
+            <h1>Mapa del sitio</h1>
+            <ul>
+                <li>
+                    <a href="https://www.turing-ia.com/index.php">
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/nosotros.php">
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/services.php">
+                        <span>Servicios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/tableau.php">
+                        <span>Tableau</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="actividades">
+            <h1>Nuestros servicios</h1>
+            <ul>
+                <li>
+                    <a href="https://www.turing-ia.com/ba.php">
+                        <span>Implementación de Proyectos (Business Analyst)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/workshop.php">
+                        <span>Workshop (Blue Print)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/capacitacion.php">
+                        <span>Capacitación</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/vsoftware.php">
+                        <span>Venta de Software</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/dsoftware.php">
+                        <span>Desarrollo de Aplicaciones</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.turing-ia.com/scorecard.php">
+                        <span>Balanced Scorecard</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--JS menu hamburguesa-->
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('error')) {
+                document.querySelector('.error').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.promo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    z-index: 2;
+  }

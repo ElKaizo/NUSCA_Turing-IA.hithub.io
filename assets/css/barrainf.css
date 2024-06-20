@@ -1,0 +1,63 @@
+/*materiales*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
+
+/*variables*/
+:root {
+  --header-height: 3.5rem;
+  --white-color: #ececec;
+  --black-color: #0F2D3C;
+  --dark-green: #005546;
+  --green: #1EBE91;
+  --white-green:#1EBE91;
+  --normal-font-size: .938rem;
+  --font-medium: 500;
+}
+
+/*CSS de la barra inferior*/
+.footer {
+    position:relative; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-around; 
+    padding: 20px 0; 
+    color: var(--white-color); 
+    z-index: 90; 
+  }
+  
+  .footer .contacto,
+  .footer .ubicacion,
+  .footer .actividades {
+    flex: 1; 
+    padding: 0 10px; 
+  }
+  
+  .footer h1 {
+    padding-bottom: 1vh;
+    font-size: 1.5rem; 
+  }
+  
+  .footer p {
+    padding-bottom: 1vh;
+    font-size: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }

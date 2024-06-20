@@ -1,0 +1,77 @@
+/*materiales*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+
+
+* {
+  border-color: transparent; /* Cambia el color del borde a transparente */
+}
+
+/*variables*/
+:root {
+  --header-height: 3.5rem;
+  --white-color: #ececec;
+  --black-color: #0F2D3C;
+  --dark-green: #005546;
+  --green: #1EBE91;
+  --white-green:#1EBE91;
+  --normal-font-size: .938rem;
+  --font-medium: 500;
+}
+
+/*CSS del formulario*/
+.form{
+    background-color: var(--green);
+    border-radius: 10px;
+    align-items: center;
+    padding: 5%;
+    color: var(--white-color);
+  }
+  
+  .form p, .form .box{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .form .boton{
+    background-color: var(--white-color);
+    color: var(--dark-green);
+    padding: 5%;
+    font-size: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .form .boton:hover{
+    transition: .5s;
+    background-color: var(--dark-green);
+    color: var(--white-color);
+
+  }
+  .form .box{
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 10px;
+    color:var(--green);
+    border: none;
+  }
+  
+  .form a{
+    color: var(--white-color);
+  }
+  .form a:hover{
+    text-decoration: underline;
+  
+  }
+
+.error{
+  background-color: rgb(161, 0, 0);
+  padding: 1%;
+  color: var(--white-color);
+  border-radius: 10px;
+  display: none;
+  
+}
+.error p{
+  font-size: 1.5rem;
+}
